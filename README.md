@@ -23,15 +23,11 @@ void clear() noexcept;
 node_iterator begin() noexcept;
 node_iterator end() noexcept;
 
-##=====================================
 ## Member functions of propagator
-## TODO
-##=====================================
+### TODO
 
-##=====================================
 ## Member functions of topological sort
-## TODO
-##=====================================
+### TODO
 
 ## Implementation
 Using C++11 Standard Library, lock-free-concurrency unless mentioned
