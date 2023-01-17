@@ -2,9 +2,9 @@
 // This code is licensed under the MIT License.
 
 #pragma once
+
 #include <vector>
 #include <iterator>
-#include <map>
 #include "concurrent_node.h"
 
 namespace nonestd {
