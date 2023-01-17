@@ -10,6 +10,7 @@ If you have a graph of three nodes A, B, and C, the two edges connecting A with 
 
 ## Member functions of graph
 ### modifiers:
+~~~~~~~~~~cpp
 void insert(const node_type& node);
 void connect(const std::vector<node_type>& predecessors, const node_type& node, const std::vector<node_type>& successors);
 void connect(const std::vector<node_type>& predecessors, const node_type& node);
@@ -19,9 +20,12 @@ void erase_preddecessors(const node_type& node);
 void erase_successors(const node_type& node);
 void erase_connection(const node_type& predecessor, const node_type& successor);
 void clear() noexcept;
+~~~~~~~~~~
 ### iterators:
+~~~~~~~~~~cpp
 node_iterator begin() noexcept;
 node_iterator end() noexcept;
+~~~~~~~~~~
 
 ## Member functions of propagator
 ### TODO
