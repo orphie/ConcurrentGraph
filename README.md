@@ -1,14 +1,14 @@
 # **ConcurrentGraph**
-A directed graph with support of lock-free concurrent traversal, concurrent topological sort, loop detection, etc
+A directed graph with lock-free concurrent visit, topological sort/visit, loop handling, etc
 
 ## Graph
-Use classic graph defination: 
+Classic graph defination: 
 "A graph is made up of two finite sets: a set of nodes (or vertices) and a set of edges. 
 Each node has a label to identify it and distinguish it from other nodes. 
 Edges in a graph connect exactly two nodes and are denoted by the labels of the pair of nodes that are related. 
 If you have a graph of three nodes A, B, and C, the two edges connecting A with B and B with C would be written as (A,B) and (B,C)." - <<The Art of Concurrency>>, Clay Breshears
 
-## Member functions of graph
+## APIs
 ### modifiers:
 ~~~~~~~~~~cpp
 void insert(const node_type& node);
@@ -26,15 +26,6 @@ void clear() noexcept;
 node_iterator begin() noexcept;
 node_iterator end() noexcept;
 ~~~~~~~~~~
-
-## Member functions of propagator
-### TODO
-
-## Member functions of topological sort
-### TODO
-
-## Implementation
-Using C++11 Standard Library, lock-free-concurrency unless mentioned
 
 ## Examples
 Examples and use models could be found in test
